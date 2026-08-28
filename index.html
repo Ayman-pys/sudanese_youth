@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشباب السوداني | منصة تطوعية تصنع الأثر</title>
+<meta name="description" content="الشباب السوداني منصة تطوعية تجمع المتطوعين والمبادرات المجتمعية في مكان واحد، لتحويل الشغف بالعطاء إلى أثر حقيقي ومستدام.">
+<meta name="keywords" content="تطوع, منصة تطوعية, مبادرات مجتمعية, عمل تطوعي, الشباب السوداني">
+<meta property="og:title" content="الشباب السوداني | منصة تطوعية تصنع الأثر">
+<meta property="og:description" content="نجمع الشغوفين بالعطاء لتنفيذ مبادرات حقيقية تصنع أثرًا مستدامًا في المجتمع.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+<!-- شاشة التحميل -->
+<div class="preloader" id="preloader">
+  <div class="preloader-logo-wrap">
+    <span class="preloader-ring" aria-hidden="true"></span>
+    <img src="logo.png" alt="الشباب السوداني" class="preloader-logo">
+  </div>
+  <span class="preloader-text">
+    جاري التحميل<span class="preloader-dots"><span>.</span><span>.</span><span>.</span></span>
+  </span>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar-inner container">
+    <a href="index.html#home" class="brand" data-i18n-aria="navHome">
+      <img src="logo.png" alt="الشباب السوداني" class="brand-logo" width="40" height="40">
+      <span class="brand-name" data-i18n="brandName">الشباب السوداني</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+      <a href="index.html#home" class="nav-link active" data-i18n="navHome">الرئيسية</a>
+      <a href="mylearning.html" class="nav-link" data-i18n="navAbout">تعلمي</a>
+      <a href="courses.html" class="nav-link" data-i18n="navServices">الكورسات</a>
+      <a href="volnteer.html" class="nav-link" data-i18n="navvolnteer">تطوع معانا</a>
+      <a href="contact.html" class="nav-link" data-i18n="navContact">تواصل معانا</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="تغيير اللغة">
+        <span class="lang-option active" data-lang-option="ar">AR</span>
+        <span class="lang-sep">⇄</span>
+        <span class="lang-option" data-lang-option="en">EN</span>
+      </button>
+      <a href="volnteer.html" class="btn btn-primary btn-nav" data-i18n="navCta">انضم كمتطوع</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#home" class="mobile-link" data-i18n="navHome">الرئيسية</a>
+    <a href="mylearning.html" class="mobile-link" data-i18n="navAbout">تعلمي</a>
+    <a href="courses.html" class="mobile-link" data-i18n="navServices">الكورسات</a>
+    <a href="volnteer.html" class="mobile-link" data-i18n="navvolnteer">تطوع معانا</a>
+    <a href="contact.html" class="mobile-link" data-i18n="navContact">تواصل معانا</a>
+    <a href="volnteer.html" class="btn btn-primary mobile-cta" data-i18n="navCta">انضم كمتطوع</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="hero-beacon" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow" data-i18n="heroEyebrow">منصة تطوعية مجتمعية</span>
+        <h1 class="hero-title" data-i18n="heroTitle">معًا نُضيء طريق التغيير</h1>
+        <p class="hero-desc" data-i18n="heroDesc">الشباب السوداني منصة تعليمية تهدف إلى تمكين الشباب من خلال التعليم المجاني، وتطوير المهارات، وفتح فرص جديدة للمستقبل.</p>
+        <div class="hero-actions">
+          <a href="volnteer.html" class="btn btn-primary btn-lg" data-i18n="heroBtnPrimary">انضم كمتطوع</a>
+          <a href="courses.html" class="btn btn-outline btn-lg" data-i18n="heroBtnSecondary">استكشف الكورسات</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-image-wrap">
+          <img src="png1.png" alt="متطوعون يعملون معًا" class="hero-image">
+          <span class="floating-chip chip-1">
+            <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M12 2L14.5 8.5L21 9L16 13.5L17.5 20L12 16.5L6.5 20L8 13.5L3 9L9.5 8.5L12 2Z" fill="currentColor"/></svg>
+            <span data-i18n="chipImpact">أثر حقيقي</span>
+          </span>
+          <span class="floating-chip chip-2">
+            <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 9.5L13.5 14.5" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span data-i18n="chipCommunity">مجتمع متصل</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="إحصائيات">
+    <div class="container stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-count="1000" data-suffix="+">0</span>
+        <span class="stat-label" data-i18n="stat1">ساعات عمل</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-count="50" data-suffix="+">0</span>
+        <span class="stat-label" data-i18n="stat2">كورس قادم</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-count="95" data-suffix="%">0</span>
+        <span class="stat-label" data-i18n="stat3">نسبة الأثر الإيجابي</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-count="100" data-suffix="%">0</span>
+        <span class="stat-label" data-i18n="stat3">دورات مجانية</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-image-frame">
+          <img src="png2.png" alt="فريق الشباب السوداني التطوعي" class="about-image" loading="lazy">
+        </div>
+        <div class="about-glow" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-content reveal">
+        <span class="eyebrow" data-i18n="aboutEyebrow">تعلمي</span>
+        <h2 class="section-title" data-i18n="aboutTitle">قصتنا بدأت بفكرة بسيطة</h2>
+        <p class="section-desc" data-i18n="aboutDesc">الشباب السوداني منصة تؤمن أن الوصول إلى التعليم الجيد يجب ألا يكون مرتبطًا بالقدرة على الدفع. لذلك نوفر للشباب فرصًا تعليمية مجانية تساعدهم على تطوير أنفسهم أكاديميًا ومهنيًا.</p>
+
+        <ul class="check-list">
+          <li>
+            <span class="check-icon">✓</span>
+            <span data-i18n="aboutPoint1">تعلّم مجانًا
+الوصول إلى الدورات التعليمية دون رسوم.</span>
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span data-i18n="aboutPoint2">طوّر نفسك
+اكتسب المعرفة والمهارات التي تحتاجها في الدراسة والحياة والعمل.</span>
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            <span data-i18n="aboutPoint3">احصل على شهادة
+أثبت إتمامك للدورات من خلال شهادات إتمام.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="servicesEyebrow">الكورسات</span>
+        <h2 class="section-title" data-i18n="servicesTitle">اختر المجال الذي يحرّك شغفك</h2>
+        <p class="section-desc" data-i18n="servicesDesc">مبادرات متنوعة تحتاج أيادٍ وقلوبًا مثلك، اختر ما يناسب وقتك ومهاراتك وابدأ رحلتك.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M4 19V6a2 2 0 0 1 2-2h6l2 2h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 data-i18n="service1Title">التعليم والتمكين</h3>
+          <p data-i18n="service1Desc">دعم تعليمي وتدريبي للفئات الأقل حظًا لبناء مستقبل أفضل.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M12 3C9 6 6 9.5 6 13a6 6 0 0 0 12 0c0-3.5-3-7-6-10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 data-i18n="service2Title">البيئة والاستدامة</h3>
+          <p data-i18n="service2Desc">مبادرات تشجير وتنظيف وتوعية بيئية لحماية مواردنا الطبيعية.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.5C12 6.2 13.5 5 15.5 5 19 5 21 8.5 20 12c-2.5 4.5-8 9-8 9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 data-i18n="service3Title">الصحة والرعاية</h3>
+          <p data-i18n="service3Desc">حملات صحية ودعم نفسي واجتماعي للأسر والمرضى المحتاجين.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M4 21v-3a4 4 0 0 1 4-4h1M20 21v-3a4 4 0 0 0-4-4h-1M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 data-i18n="service4Title">دعم المجتمع</h3>
+          <p data-i18n="service4Desc">مساندة الأسر المحتاجة وتوزيع الموارد الأساسية بكرامة وفعالية.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 data-i18n="service5Title">الاستجابة الطارئة</h3>
+          <p data-i18n="service5Desc">فرق جاهزة للاستجابة السريعة عند الكوارث والأزمات الطارئة.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" width="26" height="26"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3 data-i18n="service6Title">تمكين الشباب</h3>
+          <p data-i18n="service6Desc">برامج قيادية ومهارات حياتية لإعداد جيل قادر على الإحداث والتغيير.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="why-glow" aria-hidden="true"></div>
+    <div class="container why-grid">
+      <div class="why-panel reveal">
+        <span class="eyebrow eyebrow-light" data-i18n="whyEyebrow">تطوع معانا</span>
+        <h2 class="why-title" data-i18n="whyTitle">لسنا مجرد منصة، نحن حركة مجتمعية</h2>
+        <p class="why-quote" data-i18n="whyQuote">"نؤمن أن التغيير الحقيقي يبدأ من فعل صغير يقوم به شخص واحد، ويكبر عندما يجتمع مع غيره."</p>
+      </div>
+
+      <ul class="why-list">
+        <li class="why-item reveal">
+          <span class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12.5 9.5 17 19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="why1Title">شفافية كاملة في الأثر</h4>
+            <p data-i18n="why1Desc">تقارير دورية توضح أثر كل ساعة تطوعها معنا.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <span class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12.5 9.5 17 19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="why2Title">مرونة تناسب وقتك</h4>
+            <p data-i18n="why2Desc">فرص تطوع عن بعد وميدانية بجداول زمنية مرنة.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <span class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12.5 9.5 17 19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="why3Title">مجتمع داعم ومحترف</h4>
+            <p data-i18n="why3Desc">فريق تنسيق يرافقك من أول يوم حتى إتمام المبادرة.</p>
+          </div>
+        </li>
+        <li class="why-item reveal">
+          <span class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12.5 9.5 17 19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="why4Title">شراكات موثوقة</h4>
+            <p data-i18n="why4Desc">تعاون مع جهات ومؤسسات معتمدة لضمان جودة كل مبادرة.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="cta-shapes" aria-hidden="true"></div>
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title" data-i18n="ctaTitle">جاهز لتكون جزءًا من التغيير؟</h2>
+      <p class="cta-desc" data-i18n="ctaDesc">انضم اليوم إلى آلاف المتطوعين وابدأ في صناعة أثر حقيقي يلمسه مجتمعك.</p>
+      <div class="cta-actions">
+        <a href="volnteer.html" class="btn btn-primary btn-lg" data-i18n="ctaBtn">انضم الآن</a>
+        <a href="contact.html" class="btn btn-outline btn-lg" data-i18n="ctaBtnSecondary">تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html#home" class="brand">
+        <img src="logo.png" alt="الشباب السوداني" class="brand-logo" width="36" height="36">
+        <span class="brand-name" data-i18n="brandName">الشباب السوداني</span>
+      </a>
+      <p data-i18n="footerAbout">منصة تطوعية تجمع الشغوفين بالعطاء لصناعة أثر مجتمعي مستدام.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5 data-i18n="footerLinksTitle">روابط سريعة</h5>
+      <a href="index.html#home" data-i18n="navHome">الرئيسية</a>
+      <a href="mylearning.html" data-i18n="navAbout">تعلمي</a>
+      <a href="courses.html" data-i18n="navServices">الكورسات</a>
+      <a href="volnteer.html" data-i18n="navvolnteer">تطوع معانا</a>
+    </div>
+
+    <div class="footer-col">
+      <h5 data-i18n="footerContactTitle">تواصل معانا</h5>
+      <a href="mailto:sudaneseyouthorg26@gmail.com">sudaneseyouthorg26@gmail.com</a>
+      <a href="tel:+20000000000" dir="ltr">this website built by KIN and Sudanese Youth team</a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/sudanese_youth/" aria-label="Instagram" class="social-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p data-i18n="footerCopy">© 2026 الشباب السوداني. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
